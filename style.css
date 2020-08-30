@@ -60,6 +60,8 @@ nav ul li a {
 
 .hero-text {
     grid-area: hero-text;
+    justify-self: center;
+    max-width: 500px;
     padding: 75px 0 0;
 }
 
@@ -98,9 +100,11 @@ nav ul li a {
         'card-1'
         'card-2'
         'card-3';
+    justify-content: center;
 }
 
 .card {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,6 +152,8 @@ nav ul li a {
 /* Contact */
 .contact {
     display: flex;
+    align-self: center;
+    justify-content: center;
     flex-direction: column;
     padding: 25px 50px 50px;
 }
@@ -161,11 +167,11 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    justify-items: stretch;
+    max-width: 768px;
 }
 
 .contact form > * {
-    justify-self: stretch;
+    justify-self: center;
 }
 
 button[type=submit] {
@@ -201,4 +207,41 @@ textarea {
 
 textarea {
     height: 150px;
+}
+
+/* Responsive Breakpoint */
+@media (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            'hero-text hero-img';
+        max-height: 600px;
+    }
+
+    .hero-text  {
+        grid-area: 'hero-text';
+        justify-self: end;
+        align-self: center;
+    }
+
+    .hero-img {
+        grid-area: hero-img;
+        display: flex;
+        justify-self: start;
+        justify-content: center;
+    }
+    
+    .hero-img img {
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        margin: 0 0 100px;
+        display: grid;
+        grid-template-areas: 
+            'card-1 card-2 card-3';
+        justify-content: center;
+    }
 }
