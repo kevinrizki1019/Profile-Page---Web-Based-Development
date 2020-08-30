@@ -153,9 +153,8 @@ nav ul li a {
 .contact {
     display: flex;
     align-self: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 25px 50px 50px;
+    padding: 25px 10% 50px;
 }
 
 .contact h3 {
@@ -166,12 +165,19 @@ nav ul li a {
 .contact form {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     font-size: 14px;
-    max-width: 768px;
+    width: 100%;
 }
 
-.contact form > * {
+.contact form #name-form, 
+.contact form #email-form {
     justify-self: center;
+    width: 50%;
+}
+
+.contact form #message-form {
+    width: 75%;
 }
 
 button[type=submit] {
@@ -182,7 +188,7 @@ button[type=submit] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 10%;
     cursor: pointer;
     align-self: flex-start;
