@@ -9,11 +9,15 @@
 </head>
 <body>
     <nav class="nav">
-        <h5 class="">Kevin<br>Rizki</h5>
+        <a href="#header"><h5 class="">Kevin<br>Rizki</h5></a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
     </nav>
 
     <div class="container">
-        <div class="header">
+        <div id="header" class="header">
             <div class="hero-text">
                 <h1 class="hero-text">Hello, My Name is <span>Kevin Rizki</span></h1>
             </div>
@@ -21,31 +25,63 @@
                 <img src="img/img1.png">
             </div>
         </div>
-
-        <div class="bar">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact me</a></li>
-            </ul>
-        </div>
     
         <div class="content">
-            <div class="about">
-                <div class="card">
-                    <img class="card-img" src="img/img2.jpg">
-                    <h4 class="card-title">I'm an Informatics student</h4>
-                    <p class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quia laborum culpa provident unde at? Fugit ullam doloremque, voluptate, doloribus debitis cum a et quisquam non enim asperiores veritatis ducimus!</p>
+            <div id="about" class="about">
+                <div id="card-1" class="card">
+                    <div class="card-img">
+                        <img src="img/img2.png">
+                    </div>
+                    <div class="card-text">
+                        <h4>I'm an Informatics Student</h4>
+                        <p>Which mean I'm studying about how information is manage, distribute, and consume especially by computer machine.</p>
+                    </div>
+                </div>
+                <div id="card-2" class="card">
+                    <div class="card-img">
+                        <img src="img/img3.png">
+                    </div>
+                    <div class="card-text">
+                        <h4>I'm a Developer in Software Application</h4>
+                        <p>I am designing software that is useful to overcome real world problem by following engineering principles.</p>
+                    </div>
+                </div>
+                <div id="card-3" class="card">
+                    <div class="card-img">
+                        <img src="img/img4.png">
+                    </div>
+                    <div class="card-text">
+                        <h4>I'm Passionate To Understand How Something is Thinking</h4>
+                        <p>Speaking in philosophical term, I'm very curious about what intelligence actually is? How it is different from consciousness? When the points for intelligence agent to become consiousness?</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="contact">
+        <section id="contact" class="contact">
+            <h3>Contact Me</h3>
+            <form id="contact-form" action="">
+                <div>
+                    <label>Name</label><br>
+                    <input id="name-form" type="text" placeholder="Name">
+                </div>
+                <div>
+                    <label>Email</label><br>
+                    <input id="email-form" type="email" placeholder="Email Address">
+                </div>
+                <div>
+                    <label>Message</label><br>
+                    <textarea id="message-form" placeholder="Message"></textarea>
+                </div>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </section>
 
-        </div>
     </div>
 
 
-        
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
